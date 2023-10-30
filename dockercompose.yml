@@ -1,0 +1,11 @@
+version: '4.23.0'
+services:
+  mySQL:
+    image: mysql:8.0
+    restart: always
+    container_name: ts-rest-server
+    environment:
+      - MYSQL_DATABASE=ts rest server
+      - MYSQL_ROOT_PASSWORD=123123
+    ports:
+      - 3306:3306
